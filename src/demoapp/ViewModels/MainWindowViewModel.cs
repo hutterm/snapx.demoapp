@@ -122,6 +122,7 @@ namespace demoapp.ViewModels
         public ReactiveCommand<Unit, Unit> CommandOpenApplicationFolder { get; set; }
         public ReactiveCommand<Unit, Unit> CommandCheckForUpdates { get; set; }
         public ReactiveCommand<Unit, Unit> CommandRestartApplication { get; set; }
+        public ReactiveCommand<Unit, Unit> SwitchChannel { get; set; }
         public IAppEnvironment Environment { get; set; }
 
     }

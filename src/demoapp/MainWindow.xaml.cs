@@ -75,6 +75,13 @@ namespace demoapp
                 _isRestart = true;
                 return Dispatcher.UIThread.InvokeAsync(Close);
             });
+            ViewModel.SwitchChannel = ReactiveCommand.CreateFromTask(async () =>
+            {
+                var i = snapApp.Channels.IndexOf(currentChannel);
+                var nexti = (i + 1) % (snapApp.Channels.Count);
+
+
+            });
             ViewModel.CommandOpenApplicationFolder = ReactiveCommand.Create(() =>
             {
                 var snapxWorkingDirectory = Snapx.WorkingDirectory;

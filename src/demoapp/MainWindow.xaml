@@ -57,6 +57,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
@@ -74,6 +75,8 @@
                 <Button Command="{Binding CommandRestartApplication}" IsEnabled="{Binding IsSnapPacked}" Grid.Column="0" Grid.Row="2">
                     <TextBlock Text="Tap to restart application" />
                 </Button>
+
+                <Button Command="{Binding SwitchChannel}" Content="Switch Channel" Grid.Row="3"/>
             </Grid>
         </StackPanel>
 
